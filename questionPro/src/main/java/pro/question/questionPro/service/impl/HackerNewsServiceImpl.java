@@ -47,7 +47,7 @@ public class HackerNewsServiceImpl implements HackerNewsService {
 		return stories;
 	}
 
-	private void saveTopStories(List<StoryDto> Stories) {
+	public void saveTopStories(List<StoryDto> Stories) {
 
 		for (StoryDto topStory : Stories) {
 			TopStoryModel story = new TopStoryModel(topStory.getId(), topStory.getTitle(), topStory.getUrl(),

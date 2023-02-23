@@ -1,7 +1,6 @@
 package pro.question.questionPro.dto;
 
-import java.time.LocalTime;
-import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +19,7 @@ public class ItemDto {
 	String text; 											// The comment, story or poll text. HTML.
 	Boolean dead; 											// true if the item is dead.
 	Long parent; 											// The comment's parent: either another comment or the relevant story.
-	ArrayList<Long> kids; 									// The ids of the item's comments, in ranked display order.
+	List<Long> kids; 									// The ids of the item's comments, in ranked display order.
 	String url; 											// The URL of the story.
 	Integer score; 											// The story's score, or the votes for a pollopt.
 	String title; 											// The title of the story, poll or job. HTML.

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class commentDto {
-	 Integer id;
+	 int id;
 	 List<Long> Kids;
 	 Long Parent;
 	 String text ;							//Comment Text
@@ -20,7 +20,7 @@ public class commentDto {
 	 
 	 int KidSize=0;
 
-	public commentDto(Integer id, List<Long> kids, Long parent, String text, Long time, String type, String by) {
+	public commentDto(int id, List<Long> kids, Long parent, String text, Long time, String type, String by) {
 		
 		this.id = id;
 		Kids = kids;
